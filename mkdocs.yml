@@ -1,0 +1,51 @@
+site_name: SelphJs Documentation
+plugins:
+  - search
+theme:
+  name: material
+  direction: ltr
+  language: en
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.ico
+
+  features:
+    - content.code.annotate
+    - navigation.instant
+    - navigation.expand
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: black
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: blue
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  analytics:
+    provider: google
+    property: UA-XXXXXXXX-X
+
+  version:
+    provider: mike
+
+repo_url: https://github.com/selphjs/create-selph-app
+repo_name: SelphJs Github Repository
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
